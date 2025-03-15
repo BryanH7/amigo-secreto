@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&family=Tektur:wght@400..900&display=swap');
+
+:root {
+    --color-primary: #031716;
+    --color-secondary: #032F30;
+    --color-tertiary: #0A7075;
+    --color-button: #0C969C;
+    --color-button-hover: #6BA3BE;
+    --color-text: #274D60;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#imagen-amigo-secreto{
+    border-radius: 100%;
+    margin: 0 0 50px 70px;
+    height: 235px;
+    animation: fadeOut 5s;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Tektur", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Tektur", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+    
+    
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Tektur", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+
+    box-shadow: 0 0 5px cyan;
+    padding: 15px 30px;
+    font-family: "Tektur", sans-serif;
+    font-size: 16px;
+    /* border: 2px solid #000; */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover{
+
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 5px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: cyan;
+    
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-white);
+    font-family: "Tektur", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    /*color: #05DF05;*/
+    color: cyan;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    /*background-color: var(--color-button-hover);*/
+    background-color: cyan;
+}
+
+
+/* Boton de reiniciado de juego*/
+.button-init{
+    margin-top:7px ;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    align-items: center;
+    font-size: 16px;
+    margin-left: 85px;
+
+}
+
+.button-init:hover{
+    background-color: cyan;
+}
+
